@@ -10,7 +10,7 @@ public class ItemController {
 	@RequestMapping("/toIndex.action")
 	public ModelAndView toIndex() {// 从这跳转至主界面index,配置完前后缀
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("index");
+		modelAndView.setViewName("login");
 		return modelAndView;
 	}
 	
@@ -24,7 +24,6 @@ public class ItemController {
 	@RequestMapping("/toList.action")
 	public ModelAndView toList() {// 从这跳转至分类页List
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("List");
 		return modelAndView;
 	}
 	
