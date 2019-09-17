@@ -9,17 +9,23 @@ public class ItemController {
 	
 	@RequestMapping("/toIndex.action")
 	public ModelAndView toIndex() {// 从这跳转至主界面index,配置完前后缀
-		return null;
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("index");
+		return modelAndView;
 	}
 	
 	@RequestMapping("/toHeader.action")
-	public ModelAndView toHeader() {// 跳转至分类页header
-		return null;
+	public ModelAndView toHeader() {// 跳转至分类页Header
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("Header");
+		return modelAndView;
 	}
 	
 	@RequestMapping("/toList.action")
 	public ModelAndView toList() {// 从这跳转至分类页List
-		return null;
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("List");
+		return modelAndView;
 	}
 	
 	@RequestMapping("/toGoods.action")
